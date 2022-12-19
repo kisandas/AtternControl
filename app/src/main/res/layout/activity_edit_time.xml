@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UpdateTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toEndOf="@id/iv_back"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="Edit Details"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_20sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Name"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="kisandas antala"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Phone No."
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="kisandas antala"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Designation"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="kisandas antala"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp"
+            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Language"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="kisandas antala"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp"
+            app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:text="Salary/Hour (₹)"
+            android:textColor="@color/text_title_color"
+            android:textSize="@dimen/_11sdp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:text="kisandas antala"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp"/>
+
+
+        <TextView
+            android:id="@+id/btn_update_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/bg_round_corner_radius_8_dp"
+            android:backgroundTint="@color/main_Theme_green_color"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:gravity="center"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</ScrollView>

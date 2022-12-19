@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_hand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_hand_image" />
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_hand"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:text="Welcome back"
+                android:textColor="@color/main_Theme_black_color"
+                android:textSize="@dimen/_24sdp" />
+
+            <TextView
+                android:id="@+id/tv_sub_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_header"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:text="Log in to your account"
+                android:textColor="@color/sub_title_textcolr"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tv_title_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sub_header"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_36sdp"
+                android:fontFamily="@font/font_inter_regular"
+                android:text="Phone No."
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:id="@+id/ll_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title_phone"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center_vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_countryFlag"
+                    android:layout_width="@dimen/_34sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/sample"
+                    app:riv_corner_radius="@dimen/_6sdp" />
+
+
+                <TextView
+                    android:id="@+id/tv_country_code"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_weight="0.3"
+                    android:fontFamily="@font/font_inter_bold"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="+00"
+                    android:textColor="@color/input_Text_color"
+                    android:textSize="@dimen/_16sdp"
+                    app:drawableEndCompat="@drawable/ic_down_arrow" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/_2sdp"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:background="@color/hint_text_color" />
+
+                <EditText
+                    android:id="@+id/et_number"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:layout_weight="0.8"
+                    android:background="@null"
+                    android:fontFamily="@font/font_inter_semi_bold"
+                    android:hint="Phone no."
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/text_title_color"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_otp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_input"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_36sdp"
+                android:fontFamily="@font/font_inter_regular"
+                android:text="You will receive an SMS verification that may apply message and data rates."
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <TextView
+                android:id="@+id/btn_create_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@id/tv_otp_text"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_60sdp"
+                android:background="@drawable/bg_round_corner_radius_8_dp"
+                android:backgroundTint="@color/main_Theme_green_color"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="Send OTP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

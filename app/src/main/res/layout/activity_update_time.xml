@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".activities.UpdateTimeActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_toEndOf="@id/iv_back"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="Update Time"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_toEndOf="@id/iv_back"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center"
+                android:text="Update Time"
+                android:textColor="@color/text_title_color"
+                android:textSize="@dimen/_12sdp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/v_title_in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_24sdp"
+            android:fontFamily="@font/font_inter_bold"
+            android:gravity="center"
+            android:text="In - Date &amp; Time"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/v_sub_title_in_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="In - Date"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_in_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="10-10-2022"
+            android:textColor="@color/input_Text_color"
+            android:textSize="@dimen/_16sdp"
+            app:drawableEndCompat="@drawable/ic_wallet" />
+
+
+        <TextView
+            android:id="@+id/tv_title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="In - Time"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_in_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="08:05"
+                android:textColor="@color/input_Text_color"
+                android:textSize="@dimen/_16sdp"
+                app:drawableEndCompat="@drawable/ic_watch_timer" />
+
+            <RadioButton
+                android:id="@+id/rb_in_time_am"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/custom_radiobutton_selector"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_in_time_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical"
+                android:text="AM"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_15sdp" />
+
+            <RadioButton
+                android:id="@+id/rb_in_time_pm"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/custom_radiobutton_selector"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_in_time_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical"
+                android:text="PM"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_24sdp"
+            android:background="@color/view_bg_color" />
+
+
+        <TextView
+            android:id="@+id/v_title_out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_24sdp"
+            android:fontFamily="@font/font_inter_bold"
+            android:gravity="center"
+            android:text="Out - Date &amp; Time"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_14sdp" />
+
+        <TextView
+            android:id="@+id/v_sub_title_out_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="Out - Date"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_out_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_edit_text"
+            android:fontFamily="@font/font_inter_semi_bold"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="10-10-2022"
+            android:textColor="@color/input_Text_color"
+            android:textSize="@dimen/_16sdp"
+            app:drawableEndCompat="@drawable/ic_wallet" />
+
+
+        <TextView
+            android:id="@+id/tv_title_out_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:fontFamily="@font/font_inter_regular"
+            android:gravity="center"
+            android:text="Out - Time"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_out_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edit_text"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="08:05"
+                android:textColor="@color/input_Text_color"
+                android:textSize="@dimen/_16sdp"
+                app:drawableEndCompat="@drawable/ic_watch_timer" />
+
+            <RadioButton
+                android:id="@+id/rb_out_time_am"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/custom_radiobutton_selector"
+                android:button="@null"
+                android:checked="true"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_out_time_am"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical"
+                android:text="AM"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_15sdp" />
+
+            <RadioButton
+                android:id="@+id/rb_out_time_pm"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/custom_radiobutton_selector"
+                android:button="@null"
+                android:checked="false"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical" />
+
+            <TextView
+                android:id="@+id/tv_out_time_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/font_inter_bold"
+                android:gravity="center_vertical"
+                android:text="PM"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_15sdp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_40sdp">
+
+            <TextView
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_corner_radius_8_dp_green_stroke"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textColor="@color/main_Theme_green_color"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/btn_update_time"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_round_corner_radius_8_dp"
+                android:backgroundTint="@color/main_Theme_green_color"
+                android:fontFamily="@font/font_inter_semi_bold"
+                android:gravity="center"
+                android:text="Update Time"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
